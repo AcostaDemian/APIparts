@@ -17,7 +17,6 @@ async function isAuthenticated(req, res, next) {
 
    try {
        const decodedToken = await admin.auth().verifyIdToken(token);
-       console.log("decodedToken", JSON.stringify(decodedToken))
        res.locals = { ...res.locals, uid: decodedToken.uid, role: decodedToken.role, email: decodedToken.email }
        return next();
    }
