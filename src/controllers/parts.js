@@ -97,10 +97,10 @@ async function addHolidays (req, res) {
 
 
 module.exports = {
-    getParts:getParts,
-    getPartsByClient:getPartsByClient,
-    getPartsByUser:getPartsByUser,
-    addPart:addPart,
-    deletePart:deletePart,
-    addHolidays:addHolidays
+    getParts,
+    getPartsByClient,
+    getPartsByUser,
+    addPart,
+    deletePart,
+    addHolidays
 }

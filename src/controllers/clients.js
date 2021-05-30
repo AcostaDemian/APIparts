@@ -37,7 +37,7 @@ async function deleteClient (req, res) {
 
 
 module.exports = {
-    getClients:getClients,
-    addClient:addClient,
-    deleteClient:deleteClient
+    getClients,
+    addClient,
+    deleteClient
 }
