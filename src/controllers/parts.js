@@ -40,8 +40,12 @@ async function addPart (req, res)  {
     const newPart = {
         user: uid,
         client: req.body.client,
+        proyect: req.body.proyect,
+        task: req.body.task,
+        description: req.body.description,
+        hours: req.body.hours,
         date: req.body.date,
-        task: req.body.task
+        ticket: req.body.ticket
     };
     db.ref('parts').push(newPart);
 
